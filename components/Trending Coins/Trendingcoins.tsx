@@ -9,24 +9,39 @@ export interface CryptoProps {
   logo: string;
   dailyChange: string;
 }
+interface CryptoApiResponse {
+  coins: {
+    item: {
+      symbol: string;
+      name: string;
+      large: string;
+      data: {
+        price_change_percentage_24h: {
+          usd: number;
+        };
+      };
+    };
+  }[];
+}
 
 export default function TrendingCoins() {
   const [cryptoData, setCryptoData] = useState<CryptoProps[]>([]);
   const baseUrl: string | undefined = process.env.NEXT_PUBLIC_CRYPTO_API;
+
   useEffect(() => {
     const fetchCryptoData = async () => {
       try {
         const endpoint = `${baseUrl}/search/trending`;
-        const response = await axios.get(
-       endpoint
-        );
+        const response = await axios.get<CryptoApiResponse>(endpoint);
         const popularCryptos = response.data.coins.slice(0, 3);
-        const transformedCryptoData: CryptoProps[] = popularCryptos.map((coin: any) => ({
+
+        const transformedCryptoData: CryptoProps[] = popularCryptos.map((coin) => ({
           ticker: coin.item.symbol.toUpperCase(),
           title: coin.item.name,
           logo: coin.item.large,
           dailyChange: coin.item.data.price_change_percentage_24h.usd.toFixed(2),
         }));
+
         console.log(transformedCryptoData);
         setCryptoData(transformedCryptoData);
       } catch (error) {
