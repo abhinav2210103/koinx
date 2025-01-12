@@ -3,6 +3,8 @@ import React from 'react'
 import CryptoGraph from '@/components/CryptoGraph'
 import SwitchPanel from '@/components/Switchpanel'
 import StatsOverview from '@/components/Statsoverview'
+import SentimentAnalysis from '@/components/Sentimentanalysis'
+import AboutSection from '@/components/Aboutsection'
 
 function Dashboard() {
   return (
@@ -15,6 +17,8 @@ function Dashboard() {
           <CryptoGraph/>
           <SwitchPanel/>
           <StatsOverview/>
+          <SentimentAnalysis/>
+          <AboutSection/>
         </div>
         <div className="lg:w-4/12 lg:mr-14 mx-4">
           
