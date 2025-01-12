@@ -28,7 +28,7 @@ export default function TrendingCoins() {
           logo: coin.item.large,
           dailyChange: coin.item.data.price_change_percentage_24h.usd.toFixed(2),
         }));
-
+        console.log(transformedCryptoData);
         setCryptoData(transformedCryptoData);
       } catch (error) {
         console.error("Error fetching cryptocurrency data:", error);

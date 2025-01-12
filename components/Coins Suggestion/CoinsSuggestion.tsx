@@ -27,7 +27,9 @@ export default function CoinsSuggestion() {
       .get(endpoint)
       .then((response) => {
         setCryptoData(response.data.coins);
+        console.log(response.data.coins);
       })
+     
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
