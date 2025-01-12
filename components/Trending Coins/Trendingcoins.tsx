@@ -12,8 +12,7 @@ export interface CryptoProps {
 
 export default function TrendingCoins() {
   const [cryptoData, setCryptoData] = useState<CryptoProps[]>([]);
-  const baseUrl = process.env.NEXT_PUBLIC_CRYPTO_API;
-
+  const baseUrl: string | undefined = process.env.NEXT_PUBLIC_CRYPTO_API;
   useEffect(() => {
     const fetchCryptoData = async () => {
       try {
@@ -36,7 +35,7 @@ export default function TrendingCoins() {
     };
 
     fetchCryptoData();
-  }, []);
+  }, [baseUrl]);
 
   return (
     <div className="lg:h-[225px] bg-white lg:ml-4 mt-4 rounded-lg px-8 pt-5">

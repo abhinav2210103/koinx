@@ -19,7 +19,7 @@ type CryptoData = {
 
 export default function CoinsSuggestion() {
   const [cryptoData, setCryptoData] = useState<CryptoData[]>([]);
-  const baseUrl = process.env.NEXT_PUBLIC_CRYPTO_API;
+  const baseUrl: string | undefined = process.env.NEXT_PUBLIC_CRYPTO_API;
 
   useEffect(() => {
     const endpoint = `${baseUrl}/search/trending`;
@@ -33,7 +33,7 @@ export default function CoinsSuggestion() {
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-  }, []);
+  }, [baseUrl]);
 
   return (
     <div className="bg-white h-max mt-10 lg:p-14 p-8">

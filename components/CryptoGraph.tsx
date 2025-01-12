@@ -13,7 +13,7 @@ interface CryptoData {
 
 export default function BitcoinTracker(): JSX.Element {
   const [cryptoStats, setCryptoStats] = useState<CryptoData | null>(null);
-  const baseUrl = process.env.NEXT_PUBLIC_CRYPTO_API;
+  const baseUrl: string | undefined = process.env.NEXT_PUBLIC_CRYPTO_API;
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -31,7 +31,7 @@ export default function BitcoinTracker(): JSX.Element {
     const interval = setInterval(fetchData, 60000); 
   
     return () => clearInterval(interval);
-  }, []);
+  }, [baseUrl]);
   
 
   return (
