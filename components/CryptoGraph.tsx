@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect, JSX } from "react";
 import axios from "axios";
-import img from "../public/btc.png";
 import TradingViewWidget from "./Tradingviewwidget";
 import Image from "next/image";
 

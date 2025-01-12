@@ -1,3 +1,4 @@
+import Image from "next/image";
 type CryptoCardProps = {
     cryptoData: {
       large: string;
@@ -18,7 +19,7 @@ type CryptoCardProps = {
     return (
       <div className="lg:w-[300px] rounded-2xl p-5 border-2 my-2 mr-2">
         <div className="flex items-center space-x-2">
-          <img
+          <Image
             src={cryptoData.large}
             alt={cryptoData.name}
             className="w-6 h-6 rounded-full"
@@ -42,7 +43,7 @@ type CryptoCardProps = {
           {cryptoData.data.price}
         </div>
   
-        <img
+        <Image
           src={
             cryptoData && cryptoData.sparkline
               ? cryptoData.sparkline
