@@ -16,8 +16,8 @@ export default function CoinDashboard() {
     <>
     <div className="h-full w-screen bg-slate-200/40">
     <Path/>
-    <div className="w-screen lg:flex">
-    <div className="lg:w-[65%] lg:ml-14 mx-4">
+        <div className="w-screen lg:flex">
+          <div className="lg:w-8/12 lg:ml-14 mx-4">
           <CryptoGraph/>
           <SwitchPanel/>
           <StatsOverview/>
@@ -26,7 +26,7 @@ export default function CoinDashboard() {
           <TokenomicsSection/>
           <TeamSection/>
         </div>
-        <div className="lg:w-[35%] mr-7 ml-4">
+        <div className="lg:w-4/12">
         <Promo/>
         <TrendingCoins/>
         </div>

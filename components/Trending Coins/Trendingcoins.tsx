@@ -53,7 +53,7 @@ export default function TrendingCoins() {
   }, [baseUrl]);
 
   return (
-    <div className="lg:h-[225px] bg-white lg:ml-4 mt-4 rounded-lg px-8 pt-5">
+    <div className="lg:h-[225px] bg-white lg:ml-2 mt-4 rounded-lg px-8 pt-5">
       <div className="text-2xl font-semibold text-[#0F1629]">
         Popular Cryptocurrencies (24h)
       </div>

@@ -6,7 +6,7 @@ export default function TokenomicsSection() {
           <div className="text-[#1D1D1D] text-xl font-semibold">
             Initial Distribution
           </div>
-          <div className="py-4 lg:flex flex flex-col justify-evenly">
+          <div className="py-4 md:flex md:flex-row flex flex-col">
             <div>
               <svg
                 width="179"

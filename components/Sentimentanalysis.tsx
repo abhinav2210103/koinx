@@ -75,11 +75,12 @@ export default function SentimentAnalysis() {
                   Lorem ipsum dolor sit amet consectetur. Dui vel quis dignissim
                   mattis enim tincidunt.
                 </div>
-                <div className="relative">
-                  <div className="absolute top-1/2 left-full transform -translate-y-1/2 -ml-8 bg-white p-4 rounded-full cursor-pointer">
+                <div className="relative ">
+                  <div className="absolute mt-10 left-full transform -translate-y-1/2 -ml-8 bg-white p-4 rounded-full cursor-pointer hidden md:block">
                     <FaAngleRight className="text-[#757779]" />
                   </div>
                 </div>
+
                 <div className="lg:text-sm text-xs font-normal text-[#3E5765] whitespace-normal mt-2 over">
                   Lorem ipsum dolor sit amet consectetur. Ac phasellus risus est
                   faucibus metus quis. Amet sapien quam viverra adipiscing
