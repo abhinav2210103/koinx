@@ -108,27 +108,27 @@ export default function SentimentAnalysis() {
 
             <div className="lg:px-10 px-2 mt-2">
               <div className="flex p-2 items-center">
-                <div className="text-[#7C7E8C] text-[15px] mr-9">Buy</div>
-                <div className="md:w-96 w-20 h-2">
+                <div className="text-[#7C7E8C] text-[15px] mr-6">Buy</div>
+                <div className="md:w-80 w-14 h-2">
                   <div className="bg-[#00B386] h-full rounded-lg "></div>
                 </div>
-                <div className="ml-3 text-[#7C7E8C] text-sm">76%</div>
+                <div className="ml-2 text-[#7C7E8C] text-sm">76%</div>
               </div>
 
               <div className="flex p-2 items-center">
-                <div className="text-[#7C7E8C] text-[15px] mr-9">Hold</div>
+                <div className="text-[#7C7E8C] text-[15px] mr-6">Hold</div>
                 <div className="md:w-8 w-4 h-2">
                   <div className="bg-[#C7C8CE] h-full rounded-lg "></div>
                 </div>
-                <div className="ml-3 text-[#7C7E8C] text-sm">8%</div>
+                <div className="ml-2 text-[#7C7E8C] text-sm">8%</div>
               </div>
 
               <div className="flex p-2 items-center">
-                <div className="text-[#7C7E8C] text-[15px] mr-9">Sell</div>
-                <div className="md:w-16 w-8 h-2">
+                <div className="text-[#7C7E8C] text-[15px] mr-6">Sell</div>
+                <div className="md:w-16 w-6 h-2">
                   <div className="bg-[#F7324C] h-full rounded-lg "></div>
                 </div>
-                <div className="ml-3 text-[#7C7E8C] text-sm">16%</div>
+                <div className="ml-2 text-[#7C7E8C] text-sm">16%</div>
               </div>
             </div>
           </div>

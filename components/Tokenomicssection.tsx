@@ -6,7 +6,7 @@ export default function TokenomicsSection() {
           <div className="text-[#1D1D1D] text-xl font-semibold">
             Initial Distribution
           </div>
-          <div className="py-4 flex ">
+          <div className="py-4 lg:flex flex flex-col justify-evenly">
             <div>
               <svg
                 width="179"
@@ -52,11 +52,11 @@ export default function TokenomicsSection() {
                     fill="#0082FF"
                   />
                 </svg>
-                <div className="text-[#202020] text-lg font-normal ml-4">
+                <div className="text-[#202020] text-lg font-normal ml-4 mt-4">
                   Crowdsale investors: 80%
                 </div>
               </div>
-              <div className="flex items-center pt-2">
+              <div className="flex  items-center pt-2">
                 <svg
                   width="12"
                   height="13"

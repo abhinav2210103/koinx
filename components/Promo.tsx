@@ -13,21 +13,18 @@ export default function Promo() {
         </div>
       </div>
       <div className="mt-8 flex justify-center">
-        <Image src={promoimg} alt="Promotional Image" className="w-[178px] h-[166.22px]"/>
+        <Image src={promoimg} alt="Promotional Image" width={150} height={150}/>
       </div>
       <div className="flex justify-center">
-
       <div className="flex justify-center mt-8 bg-white text-[#0F1629] rounded-xl py-3 w-[237px] text-center cursor-pointer">
         <button className="font-medium"> 
           Get Started for FREE
         </button>
         <div className="ml-4 mt-1">
           <FaArrowRight className="font-thin"/>
-
         </div>
       </div>
       </div>
     </div>
   );
 }
-
