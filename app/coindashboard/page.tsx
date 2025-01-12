@@ -26,7 +26,7 @@ export default function CoinDashboard() {
           <TokenomicsSection/>
           <TeamSection/>
         </div>
-        <div className="lg:w-4/12">
+        <div className="lg:w-4/12 lg:mr-14 mx-4"> 
         <Promo/>
         <TrendingCoins/>
         </div>
