@@ -1,6 +1,8 @@
 import Path from '@/components/Path'
 import React from 'react'
 import CryptoGraph from '@/components/CryptoGraph'
+import SwitchPanel from '@/components/Switchpanel'
+import StatsOverview from '@/components/Statsoverview'
 
 function Dashboard() {
   return (
@@ -11,6 +13,8 @@ function Dashboard() {
       <div className="w-screen lg:flex">
         <div className="lg:w-8/12 lg:ml-14 mx-4">
           <CryptoGraph/>
+          <SwitchPanel/>
+          <StatsOverview/>
         </div>
         <div className="lg:w-4/12 lg:mr-14 mx-4">
           

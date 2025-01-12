@@ -28,7 +28,7 @@ export default function BitcoinTracker(): JSX.Element {
     };
   
     fetchData();
-    const interval = setInterval(fetchData, 30000); 
+    const interval = setInterval(fetchData, 60000); 
   
     return () => clearInterval(interval);
   }, []);
