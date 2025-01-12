@@ -5,6 +5,8 @@ import SwitchPanel from '@/components/Switchpanel'
 import StatsOverview from '@/components/Statsoverview'
 import SentimentAnalysis from '@/components/Sentimentanalysis'
 import AboutSection from '@/components/Aboutsection'
+import TokenomicsSection from '@/components/Tokenomicssection'
+import TeamSection from '@/components/Teamsection'
 
 function Dashboard() {
   return (
@@ -19,6 +21,8 @@ function Dashboard() {
           <StatsOverview/>
           <SentimentAnalysis/>
           <AboutSection/>
+          <TokenomicsSection/>
+          <TeamSection/>
         </div>
         <div className="lg:w-4/12 lg:mr-14 mx-4">
           
