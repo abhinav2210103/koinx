@@ -14,12 +14,13 @@ interface CryptoData {
 
 export default function BitcoinTracker(): JSX.Element {
   const [cryptoStats, setCryptoStats] = useState<CryptoData | null>(null);
+  const baseUrl = process.env.NEXT_PUBLIC_CRYPTO_API;
   useEffect(() => {
     const fetchData = async () => {
       try {
+        const endpoint = `${baseUrl}/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd&include_24hr_change=true`
         const response = await axios.get(
-          "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=inr%2Cusd&include_24hr_change=true"
-        );
+          endpoint);
         setCryptoStats(response.data.bitcoin);
       } catch (error) {
         const err = error as any;

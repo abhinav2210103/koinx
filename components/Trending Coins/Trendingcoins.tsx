@@ -12,12 +12,14 @@ export interface CryptoProps {
 
 export default function TrendingCoins() {
   const [cryptoData, setCryptoData] = useState<CryptoProps[]>([]);
+  const baseUrl = process.env.NEXT_PUBLIC_CRYPTO_API;
 
   useEffect(() => {
     const fetchCryptoData = async () => {
       try {
+        const endpoint = `${baseUrl}/search/trending`;
         const response = await axios.get(
-          "https://api.coingecko.com/api/v3/search/trending"
+       endpoint
         );
         const popularCryptos = response.data.coins.slice(0, 3);
         const transformedCryptoData: CryptoProps[] = popularCryptos.map((coin: any) => ({

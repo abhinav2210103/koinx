@@ -19,10 +19,12 @@ type CryptoData = {
 
 export default function CoinsSuggestion() {
   const [cryptoData, setCryptoData] = useState<CryptoData[]>([]);
+  const baseUrl = process.env.NEXT_PUBLIC_CRYPTO_API;
 
   useEffect(() => {
+    const endpoint = `${baseUrl}/search/trending`;
     axios
-      .get("https://api.coingecko.com/api/v3/search/trending")
+      .get(endpoint)
       .then((response) => {
         setCryptoData(response.data.coins);
       })
