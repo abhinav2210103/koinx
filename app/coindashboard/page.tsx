@@ -6,9 +6,12 @@ import StatsOverview from '@/components/Statsoverview'
 import SentimentAnalysis from '@/components/Sentimentanalysis'
 import AboutSection from '@/components/Aboutsection'
 import TokenomicsSection from '@/components/Tokenomicssection'
-import TeamSection from '@/components/Teamsection'
+import TeamSection from '@/components/Team Section/Teamsection'
+import Promo from '@/components/Promo'
+import TrendingCoins from '@/components/Trending Coins/Trendingcoins'
+import CoinsSuggestion from '@/components/Coins Suggestion/CoinsSuggestion'
 
-function Dashboard() {
+export default function CoinDashboard() {
   return (
     <>
     <div className="h-full w-screen bg-slate-200/40">
@@ -25,15 +28,14 @@ function Dashboard() {
           <TeamSection/>
         </div>
         <div className="lg:w-4/12 lg:mr-14 mx-4">
-          
+        <Promo/>
+        <TrendingCoins/>
         </div>
-        
       </div>
-       
+      <CoinsSuggestion/>
     </div>
     </>
   )
 }
 
-export default Dashboard
 

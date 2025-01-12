@@ -1,12 +1,12 @@
 import Image from "next/image"
-import Dashboard from "./dashboard/page";
 import Navbar from "@/components/Navbar";
+import CoinDashboard from "./coindashboard/page";
 
 export default function Home() {
   return (
   <>
   <Navbar/>
-  <Dashboard/>
+  <CoinDashboard/>
   </>
   );
 }

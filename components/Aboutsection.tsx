@@ -58,18 +58,13 @@ export default function AboutSection() {
           <div className="text-[#0F1629] text-2xl font-semibold">
             Already Holding Bitcoin?
           </div>
-          <div className="lg:flex border-b-2 border-[#C9CFDD]/40 pb-4">
+          <div className="xl:flex  border-b-2 border-[#C9CFDD]/40 ">
             <div className="mt-4">
-              <div className="lg:w-[400px] h-[151px] bg-gradient-to-br from-[#79F1A4] to-[#0E5CAD] rounded-lg flex">
+              <div className="xl:w-[400px] h-[151px] bg-gradient-to-br from-[#79F1A4] to-[#0E5CAD] rounded-lg flex">
                 <div className="p-3">
-                  {/* <img
-                    className="w-32 h-32 rounded-xl object-right object-cover"
-                    alt=""
-                    src={About1}
-                  /> */}
                   <Image src={About1} alt="" className="w-32 h-32 rounded-xl object-right object-cover" />
                 </div>
-                <div className="items-center p-4 flex flex-col justify-center mr-10">
+                <div className="items-center p-4 flex flex-col justify-center">
                   <div className=" text-white text-xl">
                     Calculate your Profits
                   </div>
@@ -80,8 +75,8 @@ export default function AboutSection() {
                 </div>
               </div>
             </div>
-            <div className="mt-4 lg:ml-8">
-              <div className="lg:w-[400px] h-[151px] bg-gradient-to-br from-[#FF9865] to-[#EF3031] rounded-lg flex">
+            <div className="mt-4 xl:ml-8">
+              <div className="xl:w-[400px] h-[151px] bg-gradient-to-br from-[#FF9865] to-[#EF3031] rounded-lg flex">
                 <div className="p-3">
                 <Image src={About2} alt="" className="w-32 h-32 rounded-xl object-right object-cover" />
                 </div>
